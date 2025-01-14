@@ -1,7 +1,7 @@
-name: bvoyLite
-description: "A new Flutter project."
+name: bvoy_lite
+description: "BVOY app for android."
 publish_to: 'none'
-version: 0.1.0
+version: 1.0.0+1
 
 environment:
   sdk: ^3.6.0
@@ -9,12 +9,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  meta: ^1.15.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
 
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"
+  remove_alpha_ios: true 
+  
 flutter:
   uses-material-design: true
   assets:
@@ -23,3 +31,4 @@ flutter:
     - assets/healthCentre3.png
     - assets/healthCentre4.png
     - assets/healthCentre5.png
+    - assets/app_icon.png 
